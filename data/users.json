@@ -1,0 +1,25 @@
+{
+  "users" :
+  [
+    {
+      "DisplayName": "Jane Doe",
+      "EmailAddress": "janedoe@example.com",
+      "Username": "janedoe",
+      "Password": "123456"
+    },
+
+    {
+      "DisplayName": "Admin",
+      "EmailAddress": "admin@example.com",
+      "Username": "admin",
+      "Password": "789321"
+    },
+
+    {
+      "DisplayName" : "admin",
+      "EmailAddress" : "admin@durhamcollege.ca",
+      "UserName" : "admin",
+      "Password" : "password"
+    }
+  ]
+}
