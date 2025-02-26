@@ -2,36 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 , maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 
-    <!-- CSS SELECTION -->
-    <link rel="stylesheet" href="content/app.css">
+
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
-<header></header>
-<main class="container">
-    <h1> Welcome to INFT 2202</h1>
-    <button id="AboutUsBtn" class="btn btn-primary">About Us</button>
 
+<header>
 
-    <div id="weatherContainer" class="mt-4">
-        <h3>Current Weather</h3>
-        <div id="weatherData" class="card">
-            <div class="card-body">
-                <p class="card-text">Loading weather data...</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Volunteer Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search form -->
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- User authentication links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <span id="welcomeMessage" class="nav-link"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="loginLink">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logoutLink" style="display: none;">Log Out</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>    
+</header>
+
+<main class="container mt-5">
+    <section>
+        <h1 class="text-center">Welcome to Volunteer Connect!</h1>
+        <p class="text-center">Join us in making a difference in our community through exciting volunteer opportunities.</p>
+    </section>
+
+    <section id="carousel" class="mt-4">
+        <div id="volunteerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/ocg-saving-the-ocean-xch7jXAaqqo-unsplash.jpg" class="d-block w-100" alt="Volunteering Activity 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Beach Cleanup</h5>
+                        <p>Our volunteers making the coast cleaner!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/alexander-simonsen-44al1GlFVxo-unsplash.jpg" class="d-block w-100" alt="Volunteering Activity 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Community Workshop</h5>
+                        <p>Helping with Boxes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/larm-rmah-AEaTUnvneik-unsplash.jpg" class="d-block w-100" alt="Volunteering Activity 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spreading Joy</h5>
+                        <p>Contributing to a future!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/yousef-salhamoud-xbVdg96M0rA-unsplash.jpg" class="d-block w-100" alt="Volunteering Activity 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Hoping for Good</h5>
+                        <p>Our volunteers are writing their wishes</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="container mt-5">
+        <h2 class="text-center">Community News</h2>
+        <div id="newsContainer" class="row">
+            <!-- News articles will be injected here -->
+        </div>
+    </section>
+
+    <section id="searchResults" class="mt-4">
+        <!-- Search results will be injected here -->
+    </section>
+
+    <section class="text-center mt-4">
+        <button id="getInvolvedBtn" class="btn btn-primary">Get Involved</button>
+    </section>
 </main>
 
-    <!-- Scripting Selection -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="scripts/app.js"></script>
+<footer class="mt-5 text-center">
+    <p>&copy; 2025 Volunteer Connect. All rights reserved.</p>
+</footer>
 
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top">&uarr;</button>
 
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

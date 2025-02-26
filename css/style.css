@@ -1,0 +1,15 @@
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #f8d7da; /* Light red color for active links */
+}
+
+.navbar .dropdown-menu {
+    background-color: #f8f9fa; /* Light background for dropdown */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f9fa;
+}

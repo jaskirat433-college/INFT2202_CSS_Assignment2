@@ -1,17 +1,19 @@
 {
-  "name": "ice_2",
-  "version": "1.0.0",
+  "name": "clear",
+  "version": "exit",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
-  "devDependencies": {
-    "@types/jquery": "^3.5.32"
-  },
-  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "fullcalendar": "^6.1.15",
+    "jquery": "^3.7.1"
+  },
+  "author": "Jaskirat <jaskiratsingh.bhogal@dcmail.ca>",
+  "license": "MIT"
 }
